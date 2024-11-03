@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perhitungan Rata-Rata Nilai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(Background\ Design\ Of\ Retro\ Abstract\ Fashion\ Style\ Decoration\ Wallpaper\ Image\ For\ Free\ Download\ -\ Pngtree.jpeg);
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background: url(tot.jpeg);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    color: #333;
+      position: relative;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #ff0000, #000000, #ffe100);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 170, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #000000;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #a72323;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a42c2c;
+}
+
+#output p {
+    margin-top: 10px;
+    color: #000000;
+    box-sizing: border-box;
+    border: #ff0000;
+    max-width: 400px;
+    padding: 20px;
+    background: url(d5f18ab6-e745-4398-ad77-bdffb7390854.jpeg);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    
+}
+
+/* Responsiveness */
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+    </style>
+    <div class="container">
+        <h1>Hitung Rata-Rata Nilai Mata Pelajaran</h1>
+
+        <div id="inputFields">
+            <label>Nama Mata Pelajaran:</label>
+            <input type="text" id="namaMataPelajaran" placeholder="Masukkan nama mata pelajaran">
+            
+            <label>Nilai:</label>
+            <input type="number" id="nilai" placeholder="Masukkan nilai" min="0" max="100">
+            
+            <button onclick="tambahMataPelajaran()">Tambah Mata Pelajaran</button>
+        </div>
+
+        <div id="output"></div>
+
+        <button onclick="hitungRataRata()">Hitung Rata-Rata</button>
+        <button onclick="resetForm()">Reset</button>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>
